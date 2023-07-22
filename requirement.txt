@@ -1,0 +1,8 @@
+apt update
+apt install python
+apt install python-pip
+pip install python-telegram-bot==12.0.0
+pip install paramiko
+pip install --upgrade cryptography
+pip install uuid
+pip install pyodbc
