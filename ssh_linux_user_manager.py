@@ -330,7 +330,7 @@ def add_servers(update, context):
 
 def get_name_server(update, context):
     context.user_data['serverName'] = update.message.text
-    text = "Please send ip server:",
+    text = "Please send ip server:"
     send_message(context, update.effective_chat.id, True, text)
 
     return IP_SERVER
@@ -561,7 +561,7 @@ def saveServers(context):
     newData = {
         "name": context.user_data['serverName'],
         "ip": context.user_data['ip'],
-        "port": context.user_data['port'],
+        "port": int(context.user_data['port']),
         "username": "root",
         "password": ""
     }
