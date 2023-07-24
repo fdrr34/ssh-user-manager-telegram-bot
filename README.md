@@ -22,7 +22,7 @@ for run and test bot you should run
 
 and if you want to run it completly
 
-      nohup python bot.py > bot.log &
+      nohup python file_name.py > file_name.log &
       
 and it save your logs on bot.log file on your vps.
 
